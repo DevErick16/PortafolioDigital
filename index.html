@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!--MENU ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <img src="img/EFAM-LOGO.svg" alt="">
+                <a href="#">EFAM</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--SECCION DE INICIO-->
+    <section class="inicio" id="inicio">
+        <div class="contenedor-banner">
+            <div class="contenedor-img">
+                <img src="img/perfil.jpeg" alt="imagen personal">
+            </div>
+            <h1>ERICK ALVAREZ</h1>
+            <h2>Ingeniero en computacion</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/erick-francisco-alvarez-mora/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/DevErick16"><i class="fa-brands fa-github"></i></a>
+                <a href="https://m.facebook.com/erickfrancisco.alvarezmora/"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, Soy Erick Francisco Alvarez Mora </span>Ingeniero en computación con enfoque en desarrollo de Software | Desarrollador Web</p>
+
+            <div class="fila">
+                <!--Datos personales-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            16-11-2000
+                        </li>
+                        <li>
+                            <strong>Telefono</strong>
+                            55-81-52-84-21
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            erick_mora@hotmail.es
+                        </li>
+                    
+                        <li>
+                            <strong>Direccion</strong>
+                            Valle de Chalco, Estado de México
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Desarrollador Java Jr en IDS</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-microchip"></i>
+                            <span>TECNOLOGIA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-globe"></i>
+                            <span>DESARROLLO WEB</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i>
+                            <span>PROGRAMACION</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="img/CV_Erick_Francisco_AlvarezMora.pdf" download="CV_ERICK_FRANCISCO_ALVAREZ_MORA"><button download="curriculum">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button></a>
+            
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Spring mvc</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Mysql</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proactividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educacion</h3>
+                    <div class="item izq">
+                        <h4>Ingenieria en Computacion</h4>
+                        <span class="casa">Universidad Autonoma del Estado de México</span>
+                        <span class="fecha">2018-2023</span>
+                        <p>Recien egresado - Titulado.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Back End</h4>
+                        <span class="casa">Oracle Next Education</span>
+                        <span class="fecha">2023</span>
+                        <p>Estudiante en Oracle Next Education. ONE es un programa de educación y empleabilidad con el objetivo social de formar personas en tecnología y conectarlas con el mercado laboral a través de a través de empresas colaboradoras.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Informatica</h4>
+                        <span class="casa">Colegio de Bachilleres del Estado de México. Plantel 04</span>
+                        <span class="fecha">2018-2023</span>
+                        <p>Titulado.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>Portafolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a href="https://deverick16.github.io/ChallengeAlura/">
+                    <img src="img/p1.png" alt="">
+                        <div class="overlay">
+                        <h3>Encriptador de texto</h3>
+                        <p>Oracle One</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/DevErick16/ChallengeBackendALuraOne">
+                    <img src="img/p2.png" alt="">
+                        <div class="overlay">
+                        <h3>Conversor de Peso</h3>
+                        <p>Oracle One</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/DevErick16/baseapparel-comming-soon">
+                    <img src="img/p3.jpg" alt="">
+                        <div class="overlay">
+                        <h3>base apparel comming soon</h3>
+                        <p>Frontend Mentor</p>
+                        </a>
+                        </div>
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/DevErick16/Huddle-landing-page">
+                    <img src="img/p4.png" alt="">
+                        <div class="overlay">
+                        <h3>Huddle landing page</h3>
+                        <p>Frontend Mentor</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/DevErick16/intro-component-whit-signup-form">
+                    <img src="img/p5.png" alt="">
+                        <div class="overlay">
+                        <h3>intro component whit signup form</h3>
+                        <p>Frontend Mentor</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.png" alt="">
+                        <div class="overlay">
+                        <h3>Trabajo de titulacion</h3>
+                        <p>UAEM</p>
+                        </div>
+                </div>        
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER CONTACTO -->
+    <footer id="contacto" class="contacto">
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <h3>Contacto</h3>
+        <h2>PONTE EN CONTACTO AHORA MISMO!</h2>
+        <div class="contenido-seccion">
+            <div class="telefono">
+                <span><i class="fa-brands fa-whatsapp"></i> WhatsApp</span>
+                <p>(+52)5581528421</p>
+            </div>
+            <div class="correo">
+                <span><i class="fa-solid fa-square-envelope"></i> Correo Electronico</span>
+                <p>erick_mora@hotmail.es</p>
+            </div>
+        </div>
+        <div class="logo-container">
+            <img src="img/EFAM-LOGO.svg" alt="">
+        </div>
+    </footer>
+    <script src="source.js"></script>
+</body>
+</html>
